@@ -2,6 +2,8 @@ import '../app/gameGrid.css';
 
 import React, { useState } from 'react';
 
+import GameIcon from './gameIcon';
+
 const GameGrid = () => {
   const [grid, setGrid] = useState(Array(9).fill(null));
   const [isXNext, setIsXNext] = useState(true);
@@ -17,9 +19,9 @@ const GameGrid = () => {
 
   const renderSquare = (index) => {
     return (
-      <button className="square" onClick={() => handleClick(index)}>
-        {grid[index]}
-      </button>
+        <button className="square" onClick={() => handleClick(index)}>
+            <GameIcon value={grid[index]} />
+        </button>
     );
   };
 
