@@ -1,3 +1,11 @@
+.full-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
 .board-row {
     display: flex;
   }

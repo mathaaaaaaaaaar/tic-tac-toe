@@ -49,7 +49,7 @@ const GameGrid = () => {
   const status = winner ? `Winner: ${winner}` : `Next player: ${isXNext ? 'X' : 'O'}`;
 
   return (
-    <div>
+    <div className='full-board'>
       <div className="status">{status}</div>
       <div className="board-row">
         {renderSquare(0)}
